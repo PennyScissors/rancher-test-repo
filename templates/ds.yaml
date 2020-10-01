@@ -1,9 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ .Chart.Name }}
-  labels:
-    
+  name: {{ .Chart.Name }} 
 spec:
   selector:
     matchLabels:
