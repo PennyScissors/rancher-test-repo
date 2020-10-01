@@ -2,6 +2,7 @@ image: hwchiu/netutils
 tag: latest
 registry: docker.io
 
+hello: world
 #tolerations:
 #  - key: rancher-test
 #    value: testing-site
