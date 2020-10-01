@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ .Chart.Name }}
+  labels:
+    
 spec:
   selector:
     matchLabels:
@@ -19,7 +21,7 @@ spec:
       nodeSelector:
         {{- toYaml . | nindent 8 }}
       {{- end }}
-      restartPolicy: Always
+      restartPolicy: {{ .Values.restartPolicy }}
       containers:
       - name: test-container
         image: {{ .Values.registry }}/{{ .Values.image }}:{{ .Values.tag }}
