@@ -3,7 +3,6 @@ tag: latest
 registry: docker.io
 
 restartPolicy: Always
-#tolerations:
-#  - key: rancher-test
-#    value: testing-site
-#    effect: NoSchedule
+tolerations[0].key: rancher-test
+tolerations[0].value: testing-site
+tolerations[0].effect: NoSchedule
