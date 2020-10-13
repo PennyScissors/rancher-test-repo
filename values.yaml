@@ -1,8 +1,4 @@
 image: hwchiu/netutils
 tag: latest
 registry: docker.io
-
 restartPolicy: Always
-tolerations[0].key: rancher-test
-tolerations[0].value: testing-site
-tolerations[0].effect: NoSchedule
